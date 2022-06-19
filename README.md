@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # dstu helper
-
+demonstration of the project for Yandex school on flutter 2022
 
 
 ## Getting started
