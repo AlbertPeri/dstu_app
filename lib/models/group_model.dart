@@ -2,11 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:equatable/equatable.dart';
 
 class GroupModel extends Equatable{
-  String? corpus;
-  int? course;
-  String? degree;
-  String? group;
-  List<Schedules>? schedules;
+  final String? corpus;
+  final int? course;
+  final String? degree;
+  final String? group;
+  final List<Schedules>? schedules;
 
   GroupModel({this.corpus, this.course, this.degree, this.group, this.schedules});
 
@@ -46,12 +46,12 @@ class GroupModel extends Equatable{
 }
 
 class Schedules extends Equatable{
-  List<DayWeek>? monday;
-  List<DayWeek>? tuesday;
-  List<DayWeek>? wednesday;
-  List<DayWeek>? thursday;
-  List<DayWeek>? friday;
-  List<DayWeek>? saturday;
+  final List<DayWeek>? monday;
+  final List<DayWeek>? tuesday;
+  final List<DayWeek>? wednesday;
+  final List<DayWeek>? thursday;
+  final List<DayWeek>? friday;
+  final List<DayWeek>? saturday;
   Schedules({this.monday, this.tuesday, this.wednesday, this.thursday, this.friday, this.saturday,});
   static Schedules fromMap(Map<String, dynamic> map){
     Schedules schedules = Schedules(
@@ -80,11 +80,12 @@ class Schedules extends Equatable{
 }
 
 class DayWeek extends Equatable{
-  String? lesson;
-  String? room;
-  String? teacher;
-  String? type;
-  String? index;
+  final String? lesson;
+  final String? room;
+  final String? teacher;
+  final String? type;
+  final String? index;
+
   DayWeek({this.lesson, this.room, this.teacher, this.type, this.index});
 
   static DayWeek fromMap(Map<String, dynamic> map) {

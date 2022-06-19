@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CardGroupWidget extends StatelessWidget {
-  String group;
-  String corpus;
-  String degree;
-  String course;
+  final String group;
+  final String corpus;
+  final String degree;
+  final String course;
 
   CardGroupWidget(
       {Key? key,

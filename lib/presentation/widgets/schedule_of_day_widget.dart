@@ -1,14 +1,12 @@
-import 'package:dstu_helper/bloc/group/group_bloc.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ScheduleOfDayWidget extends StatelessWidget {
-  String lesson;
-  String index;
-  String teacher;
-  String room;
-  String type;
-  List<Color> colorsIndex = [
+  final String lesson;
+  final String index;
+  final String teacher;
+  final String room;
+  final String type;
+  final List<Color> colorsIndex = [
     Color(0xFFEF7663),
     Color(0xFFF7B78C),
     Color(0xFFE7E1C4),
@@ -32,7 +30,7 @@ class ScheduleOfDayWidget extends StatelessWidget {
       height: 130,
       child: Card(
         elevation: 0,
-        shadowColor: colorsIndex[int.parse(index)-1],
+        shadowColor: colorsIndex[int.parse(index) - 1],
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
@@ -41,7 +39,7 @@ class ScheduleOfDayWidget extends StatelessWidget {
             Container(
               width: 30,
               decoration: BoxDecoration(
-                color: colorsIndex[int.parse(index)-1],
+                color: colorsIndex[int.parse(index) - 1],
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(15),
                     bottomLeft: Radius.circular(15)),

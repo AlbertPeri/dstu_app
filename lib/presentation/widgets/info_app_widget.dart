@@ -8,64 +8,64 @@ class AppInfoWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
-         Text(
+        Text(
           'Информация о приложении:',
           style: TextStyle(color: Colors.grey),
         ),
         SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Приложение ДГТУ, cозданное, чтобы облегчить доступ к расписанию и другой информации.',
           style: TextStyle(color: Colors.black),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Версия:',
           style: TextStyle(color: Colors.grey),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           '1.0.0 - beta',
           style: TextStyle(color: Colors.black),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Разработчик:',
           style: TextStyle(color: Colors.grey),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Гусейнов Альберт\nhttps://t.me/alertboy',
           style: TextStyle(color: Colors.black),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Помощники:',
           style: TextStyle(color: Colors.grey),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
-         Text(
+        Text(
           'Аминов Магомед',
           style: TextStyle(color: Colors.black),
         ),
-         Text(
+        Text(
           'Омаров Абдулхалик',
           style: TextStyle(color: Colors.black),
         ),
-         SizedBox(
+        SizedBox(
           height: 10,
         ),
       ],

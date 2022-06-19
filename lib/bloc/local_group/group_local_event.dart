@@ -11,13 +11,11 @@ class LoadGroupsFromCache extends GroupLocalEvent{}
 class WriteGroupToCache extends GroupLocalEvent{
   final GroupModel group;
   WriteGroupToCache(this.group);
-  @override
   List<Object?> get prop => [group];
 }
 
 class UpdateGroupsCache extends GroupLocalEvent{
   final GroupModel group;
   UpdateGroupsCache(this.group);
-  @override
   List<Object?> get prop => [group];
 }

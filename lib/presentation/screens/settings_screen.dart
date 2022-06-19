@@ -1,12 +1,11 @@
-import 'package:dstu_helper/bloc/group/group_bloc.dart';
+import 'package:dstu_helper/bloc/local_group/group_local_bloc.dart';
 import 'package:dstu_helper/presentation/screens/list_group_screen.dart';
 import 'package:dstu_helper/presentation/widgets/CardGroupWidget.dart';
+import 'package:dstu_helper/presentation/widgets/info_app_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../bloc/local_group/group_local_bloc.dart';
-import '../widgets/info_app_widget.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -16,7 +15,9 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  final Uri _url = Uri.parse('https://docs.google.com/forms/d/e/1FAIpQLScYJ2UbmIB9J7qD0zBdmLca7L7rgZO1XBcapVo3GewwI6UtMw/viewform?usp=sf_link');
+  final Uri _url = Uri.parse(
+      'https://docs.google.com/forms/d/e/1FAIpQLScYJ2UbmIB9J7qD0zBdmLca7L7rgZO1XBcapVo3GewwI6UtMw/viewform?usp=sf_link');
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -60,8 +61,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           builder: (context) => ListGroupScreen(),
                         ),
                       ).then((value) {
-                        setState(() {
-                        });
+                        setState(() {});
                       });
                     },
                     child: Card(
@@ -113,7 +113,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   TextButton(
                     style: ButtonStyle(
-                      side: MaterialStateProperty.all( const BorderSide(
+                      side: MaterialStateProperty.all(const BorderSide(
                         width: 1,
                         color: Color(0xFFEF7663),
                         style: BorderStyle.solid,
@@ -121,13 +121,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                     child: Row(
                       children: const [
-                        Icon(Icons.forum_outlined, color: Color(0xFFEF7663),),
-                        SizedBox(width: 10,),
+                        Icon(
+                          Icons.forum_outlined,
+                          color: Color(0xFFEF7663),
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Text(
-                        'Поддержка', style: TextStyle(color: Colors.black),),
-                    ],),
+                          'Поддержка',
+                          style: TextStyle(color: Colors.black),
+                        ),
+                      ],
+                    ),
                     onPressed: () async {
-                      if (!await launchUrl(_url)) throw 'Could not launch $_url';
+                      if (!await launchUrl(_url))
+                        throw 'Could not launch $_url';
                     },
                   ),
                 ],

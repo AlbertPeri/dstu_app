@@ -1,10 +1,9 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:dstu_helper/models/group_model.dart';
+import 'package:dstu_helper/repositories/group/group_repository.dart';
 import 'package:equatable/equatable.dart';
-
-import '../../models/group_model.dart';
-import '../../repositories/group/group_repository.dart';
 
 part 'group_event.dart';
 part 'group_state.dart';

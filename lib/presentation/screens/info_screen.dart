@@ -1,4 +1,3 @@
-//import 'dart:html';
 import 'dart:io';
 import 'package:dstu_helper/presentation/widgets/CardInfoWidget.dart';
 import 'package:dstu_helper/repositories/group/group_repository.dart';

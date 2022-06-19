@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CardInfoWidget extends StatelessWidget {
 
-  IconData iconTile;
-  String tile;
-  GestureTapCallback? onTap;
+  final IconData iconTile;
+  final String tile;
+  final GestureTapCallback? onTap;
 
   CardInfoWidget(
       {Key? key, required this.iconTile, required this.tile, this.onTap})
@@ -22,16 +22,9 @@ class CardInfoWidget extends StatelessWidget {
           gradient:  LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [
-              // Color(0xFFBCC8B4),
-              // Color(0xFF7A999B),
+            colors: const [
               Color(0xFFF7B78C),
-              //Color(0xFFE7E1C4),
-              //Color(0xFFBCC8B4),
-              // Color(0xFF7A999B),
               Color(0xFFEF7663),
-              //Color(0xFFCE93D8),
-              // Colors.blue,
             ],
           ),
           // color: Colors.white,

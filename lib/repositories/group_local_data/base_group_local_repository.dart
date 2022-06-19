@@ -1,4 +1,4 @@
-import '../../../models/group_model.dart';
+import 'package:dstu_helper/models/group_model.dart';
 
 abstract class BaseGroupLocalRepository{
   Future<GroupModel> getLastGroupFromCache();

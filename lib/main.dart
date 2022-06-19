@@ -77,16 +77,13 @@ class _MainScreenState extends State<MainScreen> {
           ),
           bottomNavigationBar: NavigationBarTheme(
             data: NavigationBarThemeData(
-                  indicatorColor: Color(0xFF4DC591),
+              indicatorColor: Color(0xFF4DC591),
               backgroundColor: Colors.white,
               labelTextStyle: MaterialStateProperty.all(
-                const TextStyle(
-                ),
+                const TextStyle(),
               ),
               iconTheme: MaterialStateProperty.all(
-                IconThemeData(
-                  color: Colors.white
-                ),
+                IconThemeData(color: Colors.white),
               ),
             ),
             child: NavigationBar(
@@ -97,35 +94,38 @@ class _MainScreenState extends State<MainScreen> {
 
               destinations: [
                 NavigationDestination(
-                  selectedIcon: Icon(Icons.help,),
-                  icon: Icon(Icons.help_outline_outlined, color: Colors.black,),
+                  selectedIcon: Icon(
+                    Icons.help,
+                  ),
+                  icon: Icon(
+                    Icons.help_outline_outlined,
+                    color: Colors.black,
+                  ),
                   label: 'Инфо',
                 ),
                 NavigationDestination(
-                  selectedIcon: Icon(Icons.calendar_month,),
-                  icon: Icon(Icons.calendar_month_outlined,color: Colors.black,),
+                  selectedIcon: Icon(
+                    Icons.calendar_month,
+                  ),
+                  icon: Icon(
+                    Icons.calendar_month_outlined,
+                    color: Colors.black,
+                  ),
                   label: 'Расписание',
                 ),
                 NavigationDestination(
-                  selectedIcon: Icon(Icons.settings,),
-                  icon: Icon(Icons.settings_outlined,color: Colors.black,),
+                  selectedIcon: Icon(
+                    Icons.settings,
+                  ),
+                  icon: Icon(
+                    Icons.settings_outlined,
+                    color: Colors.black,
+                  ),
                   label: 'Настройки',
                 ),
               ],
             ),
-            ),
-
-          // bottomNavigationBar: BottomNavigationBar(
-          //   currentIndex: _selectedTab,
-          //   onTap: onSelectTab,
-          //   items: const [
-          //     BottomNavigationBarItem(icon: Icon(Icons.help), label: "Инфо"),
-          //     BottomNavigationBarItem(
-          //         icon: Icon(Icons.calendar_month), label: "Расписание"),
-          //     BottomNavigationBarItem(
-          //         icon: Icon(Icons.settings), label: "Настройки"),
-          //   ],
-          // ),
+          ),
         ),
       ),
     );

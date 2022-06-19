@@ -1,11 +1,9 @@
-
-
 import 'dart:convert';
 
+import 'package:dstu_helper/consts.dart';
+import 'package:dstu_helper/models/group_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../consts.dart';
-import '../../models/group_model.dart';
 import 'base_group_local_repository.dart';
 
 class GroupLocalRepository implements BaseGroupLocalRepository{
